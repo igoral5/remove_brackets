@@ -33,7 +33,7 @@ struct expr
 class Remove_brackets
 {
 public:
-    Remove_brackets(const std::string& s): cur_str(s), ind(0) {}
+    Remove_brackets(const std::string& s): cur_str(s), ind(0), cur_token(UNKNOWN) {}
     std::string Remove();
 private:
     OPER get_token();
